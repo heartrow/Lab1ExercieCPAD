@@ -14,3 +14,10 @@
  --space-md: 1.5rem;
  --space-lg: 3rem;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  font-size: 0.625rem;
+}
