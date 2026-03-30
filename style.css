@@ -21,3 +21,117 @@
   padding: 0;
   font-size: 0.625rem;
 }
+
+h1 {
+    padding-left: 1rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(76, 38, 38);
+}
+
+h2 {
+    padding-left: 1rem;
+    font-size: 1.75rem;
+    line-height: 3rem;
+    color: rgb(76, 38, 38);
+}
+
+h3 {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: rgb(76, 38, 38);
+}
+
+h4 {
+    padding-left: 1rem;
+    font-size: 1.25rem;
+    line-height: 3rem;
+    color: rgb(76, 38, 38);
+}
+
+p {
+    padding-left: 1rem;
+    font-size: 1rem;
+    line-height: 3rem;
+    color: rgb(73, 70, 70);
+}
+
+small {
+    padding-left: 1rem;
+    font-size: 0.75rem;
+    line-height: 3rem;
+    color: rgb(73, 70, 70);
+}
+
+header {
+    font-family: var(--font-heading);
+    background-color: var(--color-surface);
+}
+
+nav{
+    background-color: var(--color-secondary);
+}
+
+main{
+    background-color: var(--color-accent);
+}
+
+footer{
+    background-color: var(--color-surface);
+    padding: 1rem;
+}
+
+blockquote{
+    padding-left: 1rem;
+    font-family: var(--font-body);
+}
+
+ol, li {
+    padding-left: 1rem;
+    display: inline;
+    margin-right: 1rem;
+}
+
+ul, strong, abbr, dl {
+    padding-left: 1rem;
+    display: inline-;
+    line-height: 1rem;
+}
+
+dd {
+    padding-left: 1rem;
+}
+
+a:link, a:visited {
+    color: #e8d5b7;
+    font-weight: normal;
+}
+
+a:hover {
+    color: #ff9d00;
+    font-weight: normal;
+}
+
+a:active {
+    color: #ff9d00;
+    font-weight: bold;
+}
+
+figcaption {
+    padding-left: 1rem; /*make space outside of border*/
+}
+
+img {
+    margin: 1rem; /*make space inside of border*/
+    box-shadow: #666666;
+}
+
+form, label, section {
+    padding: 1rem;
+}
+
+fieldset, input, button {
+    border-radius: 15px;
+    box-shadow: gray;
+}
