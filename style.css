@@ -70,7 +70,10 @@ header {
 }
 
 nav{
+    display: flex;
+    padding: 1rem;
     background-color: var(--color-secondary);
+    justify-content: right;
 }
 
 main{
@@ -123,7 +126,9 @@ figcaption {
 }
 
 img {
-    margin: 1rem; /*make space inside of border*/
+    margin-top: 2rem; /*make space inside of border*/
+    padding-left: 1rem;
+    padding-right: 1rem;
     box-shadow: #666666;
 }
 
@@ -135,3 +140,4 @@ fieldset, input, button {
     border-radius: 15px;
     box-shadow: gray;
 }
+
