@@ -55,10 +55,17 @@ body {
     font-family: var(--font-heading);
     font-size: 2rem;
     color: var(--color-secondary);
-    margin: var(--space-sm);        /*margin -> make space outside the border*/
-    padding: var(--space-sm);       /*padding -> make space between elements*/
     color: var(--color-accent);
     background-color: var(--color-secondary);
+    position: sticky;
+    top: 0;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.nav-main a {
+    margin: var(--space-sm);        /*margin -> make space outside the border*/
+    padding: var(--space-sm);       /*padding -> make space between elements*/
 }
 
 .nav-skills {
@@ -76,8 +83,16 @@ a:link, a:visited {
     font-weight: normal;
 }
 
-a:hover, a:active {
-	color: #a57425;
+a:hover{
+    background-color: #4f8199;
+	color: #ffc800;
+	font-weight: bold;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.active{
+    background-color: #4f8199;
+	color: #ffc800;
 	font-weight: bold;
 }
 
@@ -96,12 +111,6 @@ a:hover, a:active {
 	font-size: 1rem;	
 	line-height: 2rem;
 	color: #ffffff;
-}
-
-address {
-	font-family: var(--font-heading);
-	font-size: 1rem;
-    color: #ffffff;
 }
 
 /*about me page*/
@@ -128,4 +137,22 @@ h2 {
 p, i, blockquote {
 	font-size: 1.5rem;
 	line-height: 2rem;
+}
+
+/*Footer*/
+.main-footer{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+address {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.main-footer h3{
+    font-family: var(--font-heading);
+	font-size: 1rem;
+    color: #ffffff;
 }
