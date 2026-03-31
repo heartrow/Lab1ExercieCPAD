@@ -51,7 +51,17 @@ body {
     color: var(--color-accent);
 }
 
-nav {
+.nav-main {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--color-secondary);
+    margin: var(--space-sm);        /*margin -> make space outside the border*/
+    padding: var(--space-sm);       /*padding -> make space between elements*/
+    color: var(--color-accent);
+    background-color: var(--color-secondary);
+}
+
+.nav-skills {
     font-family: var(--font-heading);
     font-size: 2rem;
     color: var(--color-secondary);
