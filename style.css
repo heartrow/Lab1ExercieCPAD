@@ -68,7 +68,10 @@ body {
     padding: var(--space-sm);       /*padding -> make space between elements*/
 }
 
+/*skills*/
 .nav-skills {
+    display: grid;
+    grid-template-columns: 1fr 280px;
     font-family: var(--font-heading);
     font-size: 6rem;
     color: var(--color-secondary);
