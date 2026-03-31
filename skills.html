@@ -1,89 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang ="en">
 	<head>
+		<title> Portfolio </title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Portfolio Page</title>
-		<link rel="stylesheet" href="style.css">
-	</head> 
+		<meta name="description" content="Skills">
+	</head>
 	<body>
 		<header>
-			<h1>About Me</h1>
-			<h2>Hi my name is Amirul Hakim bin Azhar!</h2>
-			<h3>This should be my about page.</h3>
-			<h4>I guess.</h4>
-
-			<nav>
-				<ul>
-					<li> <a href="#section-1">Top Skills</a></li>
-					<li> <a href="#section-2">Technologies I Use</a></li>
-					<li><a href="#section-3">Glossary</a></li>
-				</ul>
-			</nav>
+			<!-- <h1>Ahmad Fikri Nabil bin Zamri</h1>
+			<p>Future Software Engineer</p> -->
 		</header>
+		<nav>
+			<ul>
+				<li><a href="#topSkills">Top Skills</a></li>
+				<li><a href="#technologies">Technologies</a></li>
+				<li><a href="#glossary">Glossary</a></li>
+			</ul>
+		</nav>
 		<main>
-			<strong>This is a <em>note</em> about HTML tags.</strong>
-			<p>The tag "b" can make a text <b>bold</b> and the tag "i" can make a text <i>italic</i>. </p>
-			<blockquote cite="https://www.goodreads.com/quotes">
-				"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe." - <cite>Albert Einstein</cite>
-			</blockquote> <br>
-
-			<abbr title="HyperText Markup Language">HTML</abbr> is the standard markup language for creating web pages while <dfn title="Cascading Style Sheets">CSS</dfn> is a language to describe presentation and visual formatting.<br>
-			"ax<sup>2</sup> + bx + c" is a quadratic formula. <br>
-			H<sub>2</sub>O is <small>molecular</small> formula of <mark>water</mark>.<br>
-			<p></p>
-
-			<section id="section-1">
-				<h3>Top Skills</h3>
-				<ol type="I">
-					<li>Coding</li>
-					<li>Gym</li>
-					<li>Basketball</li>
-				</ol>
-
-				<h4>Reversed List</h4>
-				<ol type="I" reversed>
-					<li>Coding</li>
-					<li>Gym</li>
-					<li>Basketball</li>
+			<section id="topSkills">
+				<h1>Top Skills</h1>
+				<ol type="I" start="4" reversed>
+					<li>Language: Malay, English, Arabic, Mandarin(little bit)</li>
+					<li>Soft skills: Problem-solving, Critical Thinking, Project Management</li>
+					<li>Programming: C++, Java, HTML, CSS, Javascript</li>
+					<li>Design: Figma, Canva</li>
 				</ol>
 			</section>
 
-			<section id="section-2">
-				<h3>Technologies I Use</h3>
-				<ul>
-					<li>C++</li>
-					<li>Java</li>
-					<li>Web Programming
-						<ul>
-							<li>HTML</li>
-							<li>JavaScript</li>
-							<li>CSS</li>
-						</ul>
+			<section id="technologies">
+				<h1>Technologies I Use</h1>
+				<ul><li>C++, Java, HTML, CSS, Javascript
+					<ul><li>Visual Studio Code</li></ul>
 					</li>
 				</ul>
 			</section>
 
-			<section id="section-3">
-				<h3>Glossary</h3>
+			<section id="glossary">
+				<h1>Glossary</h1>
 				<dl>
-					<dt>Frontend</dt>
-						<dd>Client-side user interface.</dd>
-					<dt>Backend</dt>
-						<dd>Server-side logic.</dd>
+					<dt>HTML</dt>
+					<dd>Hyper Text Markup Language is  the standard markup language for creating Web pages</dd>
+					<dt>HTTP</dt>
+					<dd>Hypertext Transfer Protocol is the system that allows communication between web browsers</dd>
 					<dt>API</dt>
-						<dd>Rules allowing different software communicate.</dd>
-					<dt>Framework</dt>
-						<dd>Pre-written code libraries for development efficiency.</dd>
+					<dd>Application Programming Interfaces are the invisible backbone of modern software development</dd>
+					<dt>CSS</dt>
+					<dd>Cascading Style Sheets describes how HTML elements are to be displayed on screen, paper, or in other media</dd>
 				</dl>
 			</section>
 		</main>
+			<footer class="main-footer">
+				<p>Reach Me!</p>
+				<address>
+					Email: amirulhazhar@gmail.com <br>
+					Phone No: +601156711180 <br>
+					LinkedIn: <a href="https://www.linkedin.com/in/amirulhakimazhar/">Amirul Hakim</a>
+				</address>
+			</footer>
 	</body>
-
-	<footer>
-		<address>
-			Prepared by <a href="mailto:npro1047@gmail.com">Amirul Hakim</a>.<br>
-			Contact: 011-1111 1111<br>
-		</address>
-	</footer>
 </html>
