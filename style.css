@@ -75,12 +75,15 @@ nav{
     background-color: var(--color-secondary);
     justify-content: space-between;
     justify-content: right; 
-}
-
-nav.sticky{
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 main{
