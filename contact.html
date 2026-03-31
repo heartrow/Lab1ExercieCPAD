@@ -1,169 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang ="en">
 	<head>
+		<title> Portfolio </title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Portfolio Page</title>
-		<link rel="stylesheet" href="style.css">
-	</head> 
+		<meta name="description" content="Contacts">
+	</head>
 	<body>
 		<header>
-			<h1>About Me</h1>
-			<h2>Hi my name is Amirul Hakim bin Azhar!</h2>
-			<h3>This should be my about page.</h3>
-			<h4>I guess.</h4>
-
-			<nav class="nav-links">
-				<ul>
-					<li> <a href="#section-1">Top Skills</a></li>
-					<li> <a href="#section-2">Technologies I Use</a></li>
-					<li><a href="#section-3">Glossary</a></li>
-				</ul>
-			</nav>
+			<h1>Contact Me</h1>
 		</header>
 		<main>
-			<strong>This is a <em>note</em> about HTML tags.</strong>
-			<p>The tag "b" can make a text <b>bold</b> and the tag "i" can make a text <i>italic</i>. </p>
-			<blockquote cite="https://www.goodreads.com/quotes">
-				"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe." - <cite>Albert Einstein</cite>
-			</blockquote> <br>
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Personal info:</legend>
 
-			<abbr title="HyperText Markup Language">HTML</abbr> is the standard markup language for creating web pages while <dfn title="Cascading Style Sheets">CSS</dfn> is a language to describe presentation and visual formatting.<br>
-			"ax<sup>2</sup> + bx + c" is a quadratic formula. <br>
-			H<sub>2</sub>O is <small>molecular</small> formula of <mark>water</mark>.<br>
-			<p></p>
+					<label for="name">Full name:</label>
+					<input type="text" id="name" name="name" 
+						required
+						maxlength="50"><br><br>
 
-			<section id="section-1">
-				<h3>Top Skills</h3>
-				<ol type="I">
-					<li>Coding</li>
-					<li>Gym</li>
-					<li>Basketball</li>
-				</ol>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email"
+						required
+						maxlength="30"><br><br>
 
-				<h4>Reversed List</h4>
-				<ol type="I" reversed>
-					<li>Coding</li>
-					<li>Gym</li>
-					<li>Basketball</li>
-				</ol>
-			</section>
+					<label for="age">Age:</label>
+					<input type="number" id="age" name="age"
+						required 
+						min="5"
+						max="90"
+						placeholder="5-90"><br><br>
 
-			<section id="section-2">
-				<h3>Technologies I Use</h3>
-				<ol>
-					<li>C++</li>
-					<li>Java</li>
-					<li>Web Programming
-						<ol>
-							<li>HTML</li>
-							<li>JavaScript</li>
-							<li>CSS</li>
-						</ol>
-					</ol>
-				</ul>
-			</section>
+					<label for="telephone">Contact No:</label>
+					<input type="tel" id="telephone" name="telephone"
+						required 
+						maxlength="11"><br><br>
 
-			<section id="section-3">
-				<h3>Glossary</h3>
-				<dl>
-					<dt>Frontend</dt>
-						<dd>Client-side user interface.</dd>
-					<dt>Backend</dt>
-						<dd>Server-side logic.</dd>
-					<dt>API</dt>
-						<dd>Rules allowing different software communicate.</dd>
-					<dt>Framework</dt>
-						<dd>Pre-written code libraries for development efficiency.</dd>
-				</dl>
-			</section>
+					<label for="birthdate">Birthday:</label>
+					<input type="date" id="birthdate" name="birthdate"
+						required><br><br>  
 
-			<figure>
-				<img src="gambarmuka.jpg" title="Amirul Hakim" alt="My Face" width="100" height="100" >
-				<figcaption>Fig.1 - Profile photo</figcaption>
-			</figure>
+					<p>Status:</p>
+					<input type="checkbox" id="single" name="status" value="Single">
+					<label for="single"> Single</label><br>
+					<input type="checkbox" id="married" name="status" value="Married">
+					<label for="married"> Married</label><br>
+					<input type="checkbox" id="divorce" name="status" value="Divorced">
+					<label for="divorce"> Divorced</label><br>
 
-			<figure>
-				<img src="skrinshot.png" title="Lab Progress" alt="Screenshot" width="200" height="125">
-				<figcaption>Fig.2 - Project screenshot</figcaption>
-			</figure>
+					<p>Meeting Location:</p>
+					<input type="radio" id="home" name="location" value="Home">
+					<label for="home">Home</label><br>
+					<input type="radio" id="work" name="location" value="Workplace">
+					<label for="work">Workplace</label><br>
+					<input type="radio" id="college" name="location" value="College">
+					<label for="college">College</label>
+				</fieldset><br>
 
-			<figure>
-				<a href="https://www.facebook.com/groups/2786601834937666/posts/4155865584677944/">
-					<img src="fridgeguy.jpg" width="225" height="200">
-				</a>
-				<figcaption>Click Image</figcaption>
-			</figure>
+				<fieldset>
+					<legend>Message:</legend>
+					<label for="subject">Subject:</label>
+					<select  name="subject" id="subject">
+					<optgroup label="Personal">
+						<option value="family">About my family</option>
+						<option value="address">My address</option>
+					</optgroup>
+					<optgroup label="Favourites">
+						<option value="food">Food</option>
+						<option value="games">Games</option>
+					</optgroup>
+					</select><br>
 
-			<img src="footstep.webp"  align="left" width="20%">
-			<p>The "Japan is Turning Footsteps Into Electricity" copypasta is based on piezoelectric technology, which generates electricity through mechanical stress. According to publications like Parametric Architecture, Japan has been testing floor tiles using this technology, which generate electricity every time they're stepped on</p><br><br><br><br><br><br><br><br><br>
+					<label for="description">Description:</label><br>
+					<textarea id="description" name="description" rows="5" cols="30"
+						maxlength="250">
+					</textarea>
+				</fieldset><br>
 
-			<section>
-				<h3>HTML Forms</h3>
-				<form action="#" method="post">
-					
-					<fieldset>
-						<legend>Form</legend>
-						<label for="fullname">Enter your name:</label>
-						<input type="text" id="fullname" name="fullname"
-							placeholder="Your full name"
-							required maxlength="60">
-						<br> <br>
-						<label for="email">Enter your email:</label>
-						<input type="email" id="email" name="email"
-							
-							placeholder="Your email"
-							required maxlength="30">
-						<br><br>
-						<label for="telNum">Enter your phone number:</label>
-						<input type="tel" id="telNum" name="telNum"
-							
-							placeholder="Your phone number"  
-							required maxlength="13">
-						<br><br>
-						<label for="number">Enter your age:</label>
-						<input type="number" id="age" name="age" min="18" max="110" 
-							
-							placeholder="Age">
-						<br><br>
-						<label for="slider">Pick on this slider:</label><br>
-						<input type="range" id="slider" name="slider" min="0" max="50">
-						<br><br>
-						<label for="textbox">Give your opinion:</label><br>
-						<textarea id="textbox" name="textbox" rows="3" cols="50" placeholder="Type your opinion"></textarea>
-						<br><br>
-						<label for="subject">Pick your subject:</label><br>
-						<select name="subject" id="subject">
-							<optgroup label="Science">
-								<option value="Biology">Biology</option>
-								<option value="Chemistry">Chemistry</option>
-								<option value="Physics">Physics</option>		
-							</optgroup>
-							<optgroup label="Accounting">
-								<option value="Accounting">Accounting Principle</option>
-								<option value="Economy">Economy</option>
-							</optgroup>
-						</select>
-						<br><br>
-						<label>Pick your preferences:</label><br>
-						<input type="checkbox" id="check1" name="check1" value="check1"><label for="check1">C++</label><br>
-						<input type="checkbox" id="check2" name="check2" value="check2"><label for="check2">Python</label><br>
-						<input type="checkbox" id="check3" name="check3" value="check3"><label for="check3">Java</label><br>
-						<br>
-						<label>Pick your race:</label><br>
-						<input type="radio" id="radio1" name="radio" value="radio1"><label for="radio1">Malay</label><br>
-						<input type="radio" id="radio2" name="radio" value="radio2"><label for="radio2">Chinese</label><br>
-						<input type="radio" id="radio3" name="radio" value="radio3"><label for="radio3">Indian</label><br>
-					</fieldset>
-				</form>
-			</section>
+				<input type="submit" value="Submit">
+			</form>
 		</main>
+		<footer class="main-footer">
+			<p>Reach Me!</p>
+			<address>
+				Email: amirulhazhar@gmail.com <br>
+				Phone No: +601156711180 <br>
+				LinkedIn: <a href="https://www.linkedin.com/in/amirulhakimazhar/">Amirul Hakim</a>
+			</address>
+		</footer>
 	</body>
-
-	<footer>
-		<address>
-			Prepared by <a href="mailto:npro1047@gmail.com">Amirul Hakim</a>.<br>
-			Contact: 011-1111 1111<br>
-		</address>
-	</footer>
 </html>
