@@ -255,11 +255,12 @@ label {
     padding: 1rem;
 }
 
-input, textarea, select, button {
+input {
     display: block;
     width: 100%;
-    margin-bottom: 1.5rem;
     padding: 0.75rem;
+    margin-left: 1rem;
+    margin-top: 0.55rem;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1rem;
@@ -272,6 +273,12 @@ input:focus, textarea:focus, select:focus, button:focus {
     border-color: #16213e;
     box-shadow: 0 0 0 3px #5caed3;
 } 
+
+fieldset p {
+    padding-left: 1rem;
+}
+
+
 
 /*Footer*/
 .main-footer{
