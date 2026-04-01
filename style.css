@@ -108,6 +108,27 @@ body {
     color: #e1dedc;
 }
 
+section h1{
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+section ol, ul{
+    padding-bottom: 1rem;
+    padding-left: 3.5rem;
+    font-size: 2rem;
+}
+
+section dt {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+section dd {
+    padding-left: 2rem;
+    font-size: 1.25rem;
+}
+
 a:link, a:visited {
     color: #e8d5b7;
     font-weight: normal;
