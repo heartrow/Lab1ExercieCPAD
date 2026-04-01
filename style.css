@@ -71,7 +71,7 @@ body {
 /*skills*/
 .nav-skills {
     display: grid;
-    grid-template-columns: 1fr 280px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     font-family: var(--font-heading);
     font-size: 6rem;
     color: var(--color-secondary);
@@ -79,6 +79,33 @@ body {
     padding: var(--space-sm);       /*padding -> make space between elements*/
     color: var(--color-accent);
     background-color: var(--color-secondary);
+}
+
+.skills-container {
+    display: grid;
+    column-gap: 1.5rem;
+    grid-template-columns: 1fr 280px;
+}
+
+.skills-container h4 {
+    font-size: 1.5rem;
+}
+
+.skills-container p {
+    font-size: 1.20rem;
+}
+
+.skills-main {
+    padding: 1rem;
+    margin-left: 0.4rem;
+    background-color: #a5b7d7;
+    grid-column: span 1;
+}
+
+.skills-sidebar {
+    padding: 1rem;
+    background-color: #2a4b83;
+    color: #e1dedc;
 }
 
 a:link, a:visited {
