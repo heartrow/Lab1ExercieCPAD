@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+/* ============================================
+ BREAKPOINTS
+ mobile-first base: 320px and up (default)
+ tablet: @media (min-width: 600px)
+ desktop: @media (min-width: 1024px)
+ ============================================ */
+
 :root {
  --color-primary: #1a1a2e;
  --color-secondary: #16213e;
@@ -97,9 +104,14 @@ body {
 
 .skills-main {
     padding: 1rem;
-    margin-left: 0.4rem;
+    margin-left: 0.5rem;
     background-color: #a5b7d7;
-    grid-column: span 1;
+    grid-column: span 2;
+}
+
+.skills-main:hover{
+    transform: translateY(-4px);
+    transition: ease-out 0.4s;
 }
 
 .skills-sidebar {
@@ -203,8 +215,18 @@ small {
 }
 
 h2 {
+    padding-left: 1.5rem;
 	font-size: 1.75rem;
 	line-height: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    padding-left: 1.5rem;
+	font-size: 1.50rem;
+	line-height: 2rem;
+    padding-bottom: 1rem;
 }
 
 p, i, blockquote {
@@ -228,4 +250,38 @@ address {
     font-family: var(--font-heading);
 	font-size: 1rem;
     color: #ffffff;
+}
+
+/* --- Base styles (mobile) --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+}
+
+@media (min-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    .skills-container { grid-template-columns: repeat(2, 1fr); }
+
+    img {
+        padding-left: 1.5rem;
+        max-width: 100%;
+        height: auto;
+        font-size: 1.5rem;
+    }
+
+    figcaption {
+        padding-left: 1.5rem;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav {
+        flex-direction: row;
+    }
+    .skills-container { grid-template-columns: repeat(3, 1fr); }
 }
