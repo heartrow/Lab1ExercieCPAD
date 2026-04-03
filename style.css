@@ -180,8 +180,9 @@ a:hover{
     transition: color 0.5s ease, background-color 0.5s ease;
 }
 
-.active{
-    position: relative;
+.active {
+    font-weight: bold;
+    color: #ffc905;
 }
 
 .active::after{
@@ -193,8 +194,6 @@ a:hover{
     position: absolute;
     bottom: 0;
     left: 0;
-	color: #ffc800;
-	font-weight: bold;
 }
 
 .main-footer {
