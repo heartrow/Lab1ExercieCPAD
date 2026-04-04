@@ -82,7 +82,6 @@ strong, b, abbr, mark, cite {
 }
 
 
-
 /*skills*/
 .nav-skills {
     display: grid;
@@ -212,6 +211,7 @@ a:hover{
 	color: #ffffff;
 }
 
+
 /*index page*/
 .container {
     display: grid;
@@ -234,6 +234,7 @@ a:hover{
 .container p {
     font-size: 1rem;
 }
+
 
 /*about me page*/
 .main-about {
@@ -320,6 +321,28 @@ fieldset p {
 .submit-button:active {
     transform: scale(0.97);
 }
+
+
+/*Academic*/
+table {
+    font-size: 5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+table td{
+    padding: 0.5rem;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #a7a7a7;
+}
+
+table:first-child, table:last-child{
+    border-top: none;
+    border-bottom: none;
+}
+
 
 /*Footer*/
 .main-footer{
